@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function LaunchApp() {
+                alert ("Available only with Internet Explorer.");
+                var oShell = new ActiveXObject("WScript.Shell");
+                var prog = "C:\\Windows\\notepad.exe";
+                oShell.Run('"'+prog+'"',1);
+                
+                var ws = new ActiveXObject("WScript.Shell");
+                ws.Exec("C:\\Windows\\notepad.exe");
+            }
+        </script>
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <input type="submit" onclick="LaunchApp()"/>
+        <br/>
+        <a href="C:\\Windows\\notepad.exe">Launch the executable</a>
+    </body>
+    
+
+
+</html>
